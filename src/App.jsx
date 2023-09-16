@@ -1,29 +1,36 @@
 import movigo from "./assets/movigo.jpg";
 function App() {
   return (
-    <div>
-      <img
-        // height={400}
-        width={"100%"}
-        src={movigo}
-        style={{position:"relative"}}
-      />
+    <>
+      <div>
+        <img
+          // height={400}
+          width={"100%"}
+          src={movigo}
+          style={{ position: "fixed" }}
+        />
 
-      <div
+<div
         style={{
           display: "flex",
-          flexDirection:"column",
+          flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          position: "relative",
+          position: "fixed",
           // left: "20vw",
-          bottom: "50vh",
+          // bottom: "50",
+          marginTop: "20%",
+          left: "30vw"
         }}
       >
-        <span style={{fontSize:60}}>Página en remodelación</span>
-        <span style={{fontSize:40}}>Pronto volveremos!</span>
+        <h1 style={{ fontSize: "5vw" }}>Página en remodelación</h1>
+        <h1 style={{ fontSize: "3vw" }}>Pronto volveremos!</h1>
       </div>
-    </div>
+
+
+      </div>
+     
+    </>
   );
 }
 export default App;
